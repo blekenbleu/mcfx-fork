@@ -2,6 +2,9 @@ mcfx - multichannel cross plattform audio plug-in suite
 ==============
 
 - mcfx is a suite of multichannel vst plug-ins or standalone applications (standalone currently meter and convolver only)
+	- changes in this `forked` branch will mostly be to get it built
+	- modifications, probably only to **mcfx_gain_delay** will then be made in the `main` branch
+	- instead of breaking merges by README changes, see the [wiki](https://github.com/blekenbleu/mcfx-fork/wiki)  
 
 - channel count is configurable with compile time flag
 
