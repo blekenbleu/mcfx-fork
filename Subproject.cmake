@@ -68,9 +68,9 @@ target_link_libraries (${SUBPROJECT_NAME} PRIVATE
     #juce::juce_recommended_warning_flags
 	)
 
-IF(WITH_FFTW3)
-	target_link_libraries (${SUBPROJECT_NAME} PRIVATE
-		${FFTW3F_LIBRARY}
-		${FFTW3F_THREADS_LIBRARY}
-	)
-ENDIF(WITH_FFTW3)
+#IF(WITH_FFTW3)
+#	target_link_libraries (${SUBPROJECT_NAME} PRIVATE
+#		${FFTW3F_LIBRARY}
+#		${FFTW3F_THREADS_LIBRARY}
+#	)
+#ENDIF(WITH_FFTW3)

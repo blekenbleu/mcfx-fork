@@ -144,9 +144,9 @@ INCLUDE_DIRECTORIES ( BEFORE ${CMAKE_CURRENT_SOURCE_DIR}/common/LegendreU )
 # additional cmake find packages
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-IF (WITH_ZITA_CONVOLVER OR WIN32)
-	find_package(FFTW3 COMPONENTS single)
-ENDIF (WITH_ZITA_CONVOLVER OR WIN32)
+#IF (WITH_ZITA_CONVOLVER OR WIN32)
+#	find_package(FFTW3 COMPONENTS single)
+#ENDIF (WITH_ZITA_CONVOLVER OR WIN32)
 
 IF(UNIX AND NOT APPLE AND NOT ANDROID)
 	find_package(FFTW3 COMPONENTS single threads)
@@ -160,14 +160,14 @@ IF (JUCE_JACK)
     message(${patch_result})
 ENDIF (JUCE_JACK)
 
-include_directories(${FFTW3_INCLUDE_DIR} ${JACK_INCLUDE_DIRS})
+#include_directories(${FFTW3_INCLUDE_DIR} ${JACK_INCLUDE_DIRS})
 
 
 ################################################
 # add all subprojects (plugins)
 
-ADD_SUBDIRECTORY ( mcfx_convolver )
+# ADD_SUBDIRECTORY ( mcfx_convolver )
 ADD_SUBDIRECTORY ( mcfx_delay )
-ADD_SUBDIRECTORY ( mcfx_filter )
+# ADD_SUBDIRECTORY ( mcfx_filter )
 ADD_SUBDIRECTORY ( mcfx_gain_delay )
 ADD_SUBDIRECTORY ( mcfx_meter )
