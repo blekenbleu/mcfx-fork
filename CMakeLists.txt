@@ -12,7 +12,8 @@ ADD_DEFINITIONS(-DVERSION=${VERSION})
 
 ################################################
 #choices at compile time
-SET(NUM_CHANNELS 36 CACHE STRING "number of channels for each plugin")
+#SET(NUM_CHANNELS 36 CACHE STRING "number of channels for each plugin")
+SET(NUM_CHANNELS 8 CACHE STRING "number of channels for each plugin")
 SET(MAX_DELAYTIME_S 0.5 CACHE STRING "maximum delaytime for mcfx_delay in seconds")
 
 SET(BUILD_VST TRUE CACHE BOOL "build VST plugins")

@@ -359,7 +359,8 @@ isStrgDown(false)
 
             sld_gain.getUnchecked(i)->setTooltip(tooltip);
 
-            sld_gain.getUnchecked(i)->setRange (-18, 18, 0.01);
+            sld_gain.getUnchecked(i)->setRange (-60,  6, 0.01);
+//          sld_gain.getUnchecked(i)->setRange (-18, 18, 0.01);
             sld_gain.getUnchecked(i)->setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
             sld_gain.getUnchecked(i)->setVelocityBasedMode(true);
             sld_gain.getUnchecked(i)->setTextBoxStyle (Slider::TextBoxLeft, false, 50, 18);
